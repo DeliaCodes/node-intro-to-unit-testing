@@ -4,6 +4,12 @@ const fizzBuzzer = require('../fizzBuzzer');
 
 describe('Fizz Buzz', () => {
 
-  it('Throw an error if input is something other than a number', () => {});
+  it('if input is something other than a number', () => {
+    const result = 'X';
+
+    expect(result.error).to.equal('X must be a number');
+  });
+
+  it('returns Fizz Buzz', () => )
 
 });
