@@ -16,6 +16,19 @@ describe('Fizz Buzz', () => {
     expect(result).to.equal('fizz-buzz');
   });
 
+  it('returns Fizz', () => {
+    const result = fizzBuzzer(3);
+    expect(result).to.equal('fizz');
+  });
 
+  it('returns buzz', () => {
+    const result = fizzBuzzer(5);
+    expect(result).to.equal('buzz');
+  });
+
+  it('Deals with large numbers', () => {
+    const result = fizzBuzzer(55);
+    expect(result).to.equal('buzz');
+  });
 
 });
